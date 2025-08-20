@@ -1,6 +1,6 @@
 resource "aws_dynamodb_table_item" "account-request" {
   table_name = var.account-request-table
-  hash_key   = var.account-request-table-hash
+  hash_key   = lookup(var.control_tower_parameters, "AccountEmail") 
 
   item = jsonencode({
     id = { S = lookup(var.control_tower_parameters, "AccountEmail") }
