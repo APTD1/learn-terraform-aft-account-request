@@ -1,30 +1,30 @@
-module "sandbox" {
-  source = "./modules/aft-account-request"
+# module "sandbox" {
+#   source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "azeezafeez119+essential1@gmail.com"
-    AccountName               = "Sandbox-aft"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "azeezafeez119+essential1@gmail.com"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
-  }
+#   control_tower_parameters = {
+#     AccountEmail              = "azeezafeez119+essential1@gmail.com"
+#     AccountName               = "Sandbox-aft"
+#     ManagedOrganizationalUnit = "Learn AFT"
+#     SSOUserEmail              = "azeezafeez119+essential1@gmail.com"
+#     SSOUserFirstName          = "Sandbox"
+#     SSOUserLastName           = "AFT"
+#   }
 
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
+#   account_tags = {
+#     "Learn Tutorial" = "AFT"
+#   }
 
-  change_management_parameters = {
-    change_requested_by = "Essential Group"
-    change_reason       = "Account creation"
-  }
+#   change_management_parameters = {
+#     change_requested_by = "Essential Group"
+#     change_reason       = "Account creation"
+#   }
 
-  custom_fields = {
-    group = "non-prod"
-  }
+#   custom_fields = {
+#     group = "non-prod"
+#   }
 
-  account_customizations_name = "sandbox"
-}
+#   account_customizations_name = "sandbox"
+# }
 
 
 
